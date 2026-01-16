@@ -1,0 +1,40 @@
+(Short Version)
+“These assets are licensed under the Jam Pack Open License (JPOL) – CC BY 4.0 with No Standalone Resale. You may use them in games, projects, or lessons, but may not sell or redistribute them on their own. Full license in LICENSE.txt.”
+
+(Snappy Version
+Here’s a snappy version suitable for in-game credits or small text spots:
+
+“Some assets © [Your Name], used under Jam Pack Open License (JPOL). Do not sell separately.”
+
+(Custom License based on CCA 4.0)
+
+Jam Pack Open License (JPOL) – Version 1.0
+Based on Creative Commons Attribution 4.0 International (CC BY 4.0)
+
+Copyright (c) [2026] [Dylan Fries]
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of these assets (the “Materials”), to use, copy, modify, and distribute them,
+including for commercial and educational purposes, **as part of a larger work**,
+subject to the following conditions:
+
+1. **Attribution**  
+   You must give appropriate credit, provide a link to this license, and indicate
+   if changes were made. You may do so in any reasonable manner, but not in any
+   way that suggests the licensor endorses you or your use.  
+   Example: “This project uses assets from the Jam Pack Open License (JPOL) by [Your Name].”
+
+2. **No Standalone Resale**  
+   You may **not sell, sublicense, or redistribute** the Materials **on their own** 
+   or as a primary product. The Materials must be incorporated into a larger interactive
+   or educational work (e.g., a game, lesson, or project).
+
+3. **Other Rights**  
+   This license does **not** affect fair use, rights other people may have to the
+   Materials, or any applicable laws.
+
+4. **Disclaimer**  
+   The Materials are provided “as-is,” without warranty of any kind. The author
+   is not liable for any damages resulting from the use of the Materials.
+
+For full details of the original CC BY 4.0 license, see: https://creativecommons.org/licenses/by/4.0/
