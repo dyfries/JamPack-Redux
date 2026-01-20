@@ -4,7 +4,7 @@ using UnityEngine;
 // This script moves an object Transform over time
 // in a fixed direction. 
 // Doesn't work with Rigidbodies, so just for things like background elements. 
-public class SimpleMover : MonoBehaviour
+public class SimpleMover_v2 : MonoBehaviour
 {
     [Header("--- Control Flags ---")]
     public bool enableMovement = true;
