@@ -711,11 +711,11 @@ PlayerSettings:
   apiCompatibilityLevel: 6
   activeInputHandler: 0
   windowsGamepadBackendHint: 0
-  cloudProjectId: 80b8107d-4279-415e-b68d-604b4627de8d
+  cloudProjectId: a7c8e103-5439-403c-acc1-ad79a754a90c
   framebufferDepthMemorylessMode: 0
   qualitySettingsNames: []
   projectName: JamPack-Redux
-  organizationId: dy_rrc
+  organizationId: morgankla99
   cloudEnabled: 0
   legacyClampBlendShapeWeights: 0
   hmiLoadingImage: {fileID: 0}
