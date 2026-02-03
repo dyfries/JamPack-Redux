@@ -50,6 +50,8 @@ public class PlayerForceMovement : MonoBehaviour
     // Physics Update: Provide Forces in this loop instead. 
     void FixedUpdate()
     {
+        // The movement style that is applied to the player is determined by the movementType enum
+
         switch (movementType)
         {
             case MovementType.WorldForce:
@@ -70,28 +72,47 @@ public class PlayerForceMovement : MonoBehaviour
     // Move the player relative to the world
     private void MovePlayerWorld()
     {
+        // Add Force to the object in the world direction & orientation. 
+        // This is useful if you want to have a simple control scheme where the input directly 
+        //   relates to the movement in "World Space". This is useful for top down games,
+        //   and can be manipulated into other genres (beat em up, fighting, etc)
+
+        //Movement input is combined into vector
         Vector2 worldForce = new Vector2(xInput, yInput);
 
+        // movement vector is multiplied by acceleration
+        // force is not applied if velocity is greater than the max speed
         if (Mathf.Abs(rigid.velocity.magnitude) < maxSpeed)
             rigid.AddForce(worldForce * acceleration);
-
-
     }
 
     private void MovePlayerRelative()
     {
+        // Add Force to the object in the direction it is facing. Ignore Strafe movement for now
+
         Vector2 relativeForce = new Vector2(0, yInput);
 
+        // The Add Relative Force uses the relative orientation of the physics object, so +Y means Forward
+        // Is also clamped by max speed
         if (Mathf.Abs(rigid.velocity.magnitude) < maxSpeed)
             rigid.AddRelativeForce(relativeForce * acceleration);
 
-        rigid.AddTorque(rotationSpeed * xInput * -1f);
 
+        // Rotation
+        // Add Torque to rotate the object
+        // In 2D, the only axis we can rotate on is Z (think of rotating AROUND that axis)
+        // Note the xInput goes from (-1,+1)
+        // the -1f multiplier is because by default we will rotate the wrong way. 
+        rigid.AddTorque(rotationSpeed * xInput * -1f);
 
     }
 
     private void MovePlayerConstant()
     {
+        //This moves the player without using force
+        // The velocity on the rigid body is set to the acceleration 
+        // This makes movement very precise and snappy
+
         Vector2 movementVector = new Vector2(xInput, yInput);
 
         rigid.velocity = movementVector * acceleration;
@@ -100,5 +121,10 @@ public class PlayerForceMovement : MonoBehaviour
     public float GetPlayerSpeed()
     {
        return rigid.velocity.magnitude;
+    }
+
+    public void SetPlayerSpeed(float speed)
+    {
+       acceleration = speed;
     }
 }
