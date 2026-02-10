@@ -37,7 +37,7 @@ using UnityEngine.Events;
         
 
         // Start is called before the first frame update
-        void Start()
+        void Awake()
         {
             // Ensure our currentHP equals our maxHP 
             currentHP = maxHP;
