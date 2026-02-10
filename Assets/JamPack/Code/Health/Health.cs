@@ -9,23 +9,29 @@ using UnityEngine.Events;
     public class Health : MonoBehaviour
     {
         [Header("Health Values")]
+        [Tooltip("The Maximum HP this object can have. Also sets the starting HP of the object.")]
         public float maxHP = 3;
         private float currentHP = 1;
         
         [Header("Death Behaviours")]
+        [Tooltip("Determines what will happen to the object when its health reaches 0.")]
         [SerializeField] private DeathBehaviour deathBehaviour;
         private enum DeathBehaviour
         {
             DestroyOnDeath,
             DisableOnDeath,
-            ResetOnDeath
+            ResetOnDeath,
+            DoNothingOnDeath,
         }
         
         [Header("Events")]
+        [Tooltip("The event that will run when the object reaches 0 HP.")]
         public UnityEvent OnDeath = new UnityEvent();
+        [Tooltip("The event that will run when the object takes damage.")]
         public UnityEvent OnDamage = new UnityEvent();
 
         [Header("Settings")] 
+        [Tooltip("Show Debug messages in the console.")]
         public bool DEBUG_MODE = false;
         
 
@@ -44,7 +50,6 @@ using UnityEngine.Events;
         public bool TakeDamage(float damage)
         {
             // Apply damage.
-            OnDamage.Invoke();
             currentHP -= damage;
 
             // In debug mode, print a message in the console letting us know the value of currentHP.
@@ -53,6 +58,9 @@ using UnityEngine.Events;
                 Debug.Log(currentHP);
             }
 
+            // Invoke the OnDamage Event
+            OnDamage.Invoke();
+            
             // Check if currentHP is still above 0.
             if (currentHP > 0)
             {

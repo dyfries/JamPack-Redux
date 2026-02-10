@@ -7,7 +7,9 @@ using UnityEngine;
     public class DamageOnCollision : MonoBehaviour
     {
         [Header("Settings")]
+        [Tooltip("The Amount of Damage this object will deal when colliding with another object.")]
         public float damageToDeal = 1f;
+        [Tooltip("Show Debug messages in the console.")]
         public bool DEBUG_MODE = false;
     
         // ---- COLLISION EFFECTS ----
