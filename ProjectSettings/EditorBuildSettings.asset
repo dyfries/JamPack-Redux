@@ -6,7 +6,7 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/JamPackRedux/Introduction/Intro Scene A.unity
+    path: Assets/JamPackRedux/DemoScenes/Introduction/Intro Scene A.unity
     guid: 7db94aebb89553849aad0bd0e722ee98
   - enabled: 1
     path: Assets/Scenes/SampleScene.unity
