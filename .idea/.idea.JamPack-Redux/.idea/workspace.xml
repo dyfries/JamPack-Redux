@@ -6,8 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="480daabf-7e13-499b-9d83-ffbdae70689b" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.JamPack-Redux/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.JamPack-Redux/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/JamPack/Code/Health/Health.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/JamPack/Code/Health/Health.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/JamPack/Code/Health/PlayerRespawner.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/JamPack/Code/Health/PlayerRespawner.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
