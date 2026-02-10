@@ -6,15 +6,16 @@ using UnityEngine.Events;
 /// </summary>
 public class Spawner : MonoBehaviour
 {
-    [SerializeField] private bool DEBUG_MODE;
-    
     [Header("Spawner Settings")]
     [SerializeField] private bool spawnOnStart = true;
     [SerializeField] private GameObject objectToSpawn;
     [SerializeField] protected GameObject latestSpawnedObject;
     
-    [Header("Unity Event")]
+    [Header("Events")]
     public UnityEvent OnSpawn = new UnityEvent();
+    
+    [Header("Settings")]
+    [SerializeField] private bool DEBUG_MODE;
 
     // Start is called before the first frame update.
     private void Start()
