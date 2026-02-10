@@ -5,8 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="480daabf-7e13-499b-9d83-ffbdae70689b" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/Assets/GS1_Lessons_Module1/Lesson 2b -Examples - Player Prototype/a World Force Style/WorldForcePlayerDemo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/GS1_Lessons_Module1/Lesson 2b -Examples - Player Prototype/a World Force Style/WorldForcePlayerDemo.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/JamPack/Code/PlayerController/LookInInputDirection.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/JamPack/Code/PlayerController/LookInInputDirection.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.JamPack-Redux/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.JamPack-Redux/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/JamPack/Code/Health/PlayerRespawner.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/JamPack/Code/Health/PlayerRespawner.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/JamPack/Code/Health/Spawner.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/JamPack/Code/Health/Spawner.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -16,9 +17,10 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 7
-}]]></component>
+  <component name="MetaFilesCheckinStateConfiguration" checkMetaFiles="true" />
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 7
+}</component>
   <component name="ProjectId" id="38XIilHdQdeScTm4BvXa4nHmZwa" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -29,7 +31,7 @@
     "ModuleVcsDetector.initialDetectionPerformed": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "develop",
+    "git-widget-placeholder": "healtth",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -103,12 +105,14 @@
       <option name="presentableId" value="Default" />
       <updated>1768939617968</updated>
       <workItem from="1768939619777" duration="2138000" />
+      <workItem from="1770751288595" duration="1373000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
+  <component name="UnityCheckinConfiguration" checkUnsavedScenes="true" />
   <component name="UnityProjectConfiguration" hasMinimizedUI="true" />
   <component name="UnityProjectDiscoverer">
     <option name="hasUnityReference" value="true" />
