@@ -5,7 +5,7 @@ using UnityEngine.Events;
 
 public class CollectableTrigger : MonoBehaviour{
 
-    public CollectableType targetType = CollectableType.Coin;
+    public CollectableTypeSO targetType;
     public int amountRequired;
     public UnityEvent notEnoughEvent;
     public UnityEvent triggeredEvent;
@@ -16,6 +16,7 @@ public class CollectableTrigger : MonoBehaviour{
     public void RaiseThreshold(){
         amountRequired += amountToRaise;
     }
+
     //no Refernce
     private void OnTriggerEnter2D(Collider2D collision) {
         CollectableCollector cc = collision.GetComponent<CollectableCollector>();
