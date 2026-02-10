@@ -3,18 +3,12 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events; // Added this to use the UnityEvents 
 
-// Types of things that can be collected
-public enum CollectableType{
-    Coin,
-    Gold,
-    Shrimp
-}
 
 public class Collectable : MonoBehaviour {
 
     [Header(" --- Settings --- ")]
     [Header("Collectable Type")]
-    public CollectableType itemType;
+    public CollectableTypeSO itemType;
     [Header("Disable When Collected")]
     [Tooltip("Is this collectable item disabled when it is collected, or can it be collected multiple times")]
     public bool disableWhenCollected = true;
@@ -30,10 +24,18 @@ public class Collectable : MonoBehaviour {
 
 	//public void OnCollisionEnter2D(Collision2D col){
 	public void OnTriggerEnter2D(Collider2D col){
+        if (itemType == null)
+        {
+            Debug.LogWarning("add a CollectableTypeSO");
+            return;
+        }
+
         // get the player controller reference
         CollectableCollector collector = col.GetComponent<CollectableCollector>();
         // if we collided with a gameobject that has a CollectableCollector component
-        if ( collector != null && collector.itemType == itemType ){
+
+        if ( collector != null && collector.itemType.type == itemType.type)
+        {
             // Debugging
             if(DEBUG_MODE) {  Debug.Log("DEBUG: Collectable Collided with " + col.gameObject.name); }
 

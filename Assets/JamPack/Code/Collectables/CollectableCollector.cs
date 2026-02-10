@@ -4,8 +4,9 @@ using UnityEngine;
 using UnityEngine.Events;
 
 public class CollectableCollector : MonoBehaviour {
+
     // The Type of collectable this collector will collect
-    public CollectableType itemType;
+    public CollectableTypeSO itemType;
     // current collected items
     public int collectedItems = 0;
 
