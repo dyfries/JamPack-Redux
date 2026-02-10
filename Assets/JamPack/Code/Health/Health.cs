@@ -27,6 +27,7 @@ using UnityEngine.Events;
         [Header("Events")]
         [Tooltip("The event that will run when the object reaches 0 HP.")]
         public UnityEvent OnDeath = new UnityEvent();
+        
         [Tooltip("The event that will run when the object takes damage.")]
         public UnityEvent OnDamage = new UnityEvent();
 

@@ -36,11 +36,14 @@ public class Spawner : MonoBehaviour
             return;
         }
 
+        
         // Sets a reference from the instantiated object.
         latestSpawnedObject = Instantiate(objectToSpawn, transform.position, Quaternion.identity);
         
+        
         // Calls OnSpawn Event while Object has spawned.
         OnSpawn?.Invoke();
+        
         
         if (DEBUG_MODE) Debug.Log("Spawned : " + latestSpawnedObject.name);
     }

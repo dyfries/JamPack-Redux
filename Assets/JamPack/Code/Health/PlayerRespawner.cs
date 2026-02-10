@@ -20,6 +20,7 @@ public class PlayerRespawner : Spawner
         // Runs the base class method of SpawnObject then runs the next added functionality.
         base.SpawnObject();
 
+        
         // If the player preFab has no Health component, return an error.
         if (latestSpawnedObject.GetComponent<Health>() == null)
         {
@@ -27,11 +28,14 @@ public class PlayerRespawner : Spawner
             return;
         }
         
+        
         // If Player needs to respawn on its death, subscribe the SpawnObject method to the OnDeath Event.
         if (RespawnOnDeath) 
             latestSpawnedObject.GetComponent<Health>().OnDeath.AddListener(SpawnObject);
 
+        
         // If a Health Bar UI Component is referenced, then track the Player's Health with the UI.
-        if (healthBarUI != null) healthBarUI.healthComponentToTrack = latestSpawnedObject.GetComponent<Health>();
+        if (healthBarUI != null) 
+            healthBarUI.healthComponentToTrack = latestSpawnedObject.GetComponent<Health>();
     }
 }

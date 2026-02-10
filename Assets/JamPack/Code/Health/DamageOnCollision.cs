@@ -9,6 +9,7 @@ using UnityEngine;
         [Header("Settings")]
         [Tooltip("The Amount of Damage this object will deal when colliding with another object.")]
         public float damageToDeal = 1f;
+        
         [Tooltip("Show Debug messages in the console.")]
         public bool DEBUG_MODE = false;
     
@@ -18,12 +19,14 @@ using UnityEngine;
             // Find the collision object's health component.
             Health collisionObjectHealth = collision.gameObject.GetComponent<Health>();
             
+            
             // If the object has a health component, apply damage to it.
             if (collisionObjectHealth != null)
             {
                 collisionObjectHealth.TakeDamage(damageToDeal);
             }
     
+            
             // In debug mode, print a message to the console letting us know a collision has occured.
             if (DEBUG_MODE) 
             { 

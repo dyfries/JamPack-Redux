@@ -5,9 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="480daabf-7e13-499b-9d83-ffbdae70689b" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.JamPack-Redux/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.JamPack-Redux/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/JamPack/Code/Health/Healthbar Demo Scene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/JamPack/Code/Health/Healthbar Demo Scene.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/JamPack/Code/Health/Player.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/JamPack/Code/Health/Player.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/JamPack/Code/Health/PlayerRespawner.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/JamPack/Code/Health/PlayerRespawner.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -17,6 +15,7 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="MetaFilesCheckinStateConfiguration" checkMetaFiles="false" />
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 7
 }</component>
@@ -112,6 +111,7 @@
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
+  <component name="UnityCheckinConfiguration" checkUnsavedScenes="false" />
   <component name="UnityProjectConfiguration" hasMinimizedUI="true" />
   <component name="UnityProjectDiscoverer">
     <option name="hasUnityReference" value="true" />
