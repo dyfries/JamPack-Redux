@@ -70,8 +70,8 @@ using UnityEngine.Events;
             }
             else
             {
-                // If not, run DeathFromDamage() and return true;\
-                DeathFromDamage();
+                // If not, run Death() and return true;
+                Death();
                 return true;
             }
         }
@@ -79,7 +79,7 @@ using UnityEngine.Events;
         /// <summary>
         /// Destroys the gameObject and runs any on-death effects.
         /// </summary>
-        private void DeathFromDamage()
+        private void Death()
         {
             OnDeath.Invoke();
             switch (deathBehaviour)
@@ -101,19 +101,7 @@ using UnityEngine.Events;
         /// </summary>
         public void DeathFromOtherMeans()
         {
-            OnDeath.Invoke();
-            switch (deathBehaviour)
-            {
-                case DeathBehaviour.DestroyOnDeath:
-                    Destroy(gameObject);
-                    break;
-                case DeathBehaviour.ResetOnDeath:
-                    ResetHealth();
-                    break;
-                case DeathBehaviour.DisableOnDeath:
-                    gameObject.SetActive(false);
-                    break;
-            }
+            Death();
         }
         
         

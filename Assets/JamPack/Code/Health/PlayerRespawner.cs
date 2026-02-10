@@ -2,6 +2,7 @@ using UnityEngine;
 
 /// <summary>
 /// A subclass of Spawner dedicated to spawn & respawn a Player preFab by subscribing to the spawned Player's OnDeath Event.
+/// NOTE: A Player does not need to be in the scene if a PlayerRespawner is used, it will spawn its own Player.
 /// </summary>
 public class PlayerRespawner : Spawner
 {
