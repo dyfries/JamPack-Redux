@@ -7,7 +7,7 @@ using UnityEngine;
  * This is typical of games such as Asteroids, or racing/driving/flying games. 
  */
 [RequireComponent(typeof(Rigidbody2D))]
-public class PlayerForceMovement : MonoBehaviour
+public class PlayerMovement : MonoBehaviour
 {
     private enum MovementType { WorldForce, RelativeForce, Constant }
 
@@ -28,6 +28,11 @@ public class PlayerForceMovement : MonoBehaviour
     [SerializeField]
     private float rotationSpeed = 5f;
 
+
+    [SerializeField]
+    //This will prevent the player from adding input in the y direction if true
+    private bool lockYInput = false;
+
     // Physics References
     // Note: I used Private here as we don't want people assigning this value in the editor, 
     //      We will grab the reference with code in the Start Method
@@ -44,13 +49,18 @@ public class PlayerForceMovement : MonoBehaviour
     void Update()
     {
         xInput = Input.GetAxis("Horizontal");
-        yInput = Input.GetAxis("Vertical");
+
+        if (!lockYInput)
+            yInput = Input.GetAxis("Vertical");
+
+        else
+            yInput = 0;
     }
 
     // Physics Update: Provide Forces in this loop instead. 
     void FixedUpdate()
     {
-        // The movement style that is applied to the player is determined by the movementType enum
+        // The movement style that is applied to the player is determined by the movementType enum 
 
         switch (movementType)
         {
@@ -120,11 +130,11 @@ public class PlayerForceMovement : MonoBehaviour
 
     public float GetPlayerSpeed()
     {
-       return rigid.velocity.magnitude;
+        return rigid.velocity.magnitude;
     }
 
     public void SetPlayerSpeed(float speed)
     {
-       acceleration = speed;
+        acceleration = speed;
     }
 }
