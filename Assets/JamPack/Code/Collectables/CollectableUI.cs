@@ -16,10 +16,6 @@ public class CollectableUI : MonoBehaviour
     [SerializeField]
     private TextMeshProUGUI countText; // UI text for Item count
 
-    private TextMeshProUGUI randomText;
-    private Image randomImage;
-
-
     // Start is called before the first frame update
     void Start()
     {
@@ -33,8 +29,8 @@ public class CollectableUI : MonoBehaviour
 
     void Refresh()
     {
-        image.sprite = randomImage.sprite;
-        nameText.text = randomText.text;
-        countText.text = randomText.text;
+        image.sprite = collector.itemType.sprite;
+        nameText.text = collector.itemType.name;
+        countText.text = collector.collectedItems.ToString();
     }
 }

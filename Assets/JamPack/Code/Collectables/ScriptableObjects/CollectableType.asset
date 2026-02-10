@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 32e83cd88cc8a804d8cae630deca46d4, type: 3}
   m_Name: CollectableType
   m_EditorClassIdentifier: 
-  type: test
-  name: test
+  type: Coin
+  name: Coin
   sprite: {fileID: 10913, guid: 0000000000000000f000000000000000, type: 0}
