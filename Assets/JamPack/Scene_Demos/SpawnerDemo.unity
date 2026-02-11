@@ -681,8 +681,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 893, y: 458}
-  m_SizeDelta: {x: 235.31, y: 30}
+  m_AnchoredPosition: {x: 621, y: 332}
+  m_SizeDelta: {x: 235.31, y: 167.01}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1264651305
 MonoBehaviour:
@@ -711,13 +711,17 @@ MonoBehaviour:
     m_BestFit: 0
     m_MinSize: 10
     m_MaxSize: 40
-    m_Alignment: 0
+    m_Alignment: 2
     m_AlignByGeometry: 0
     m_RichText: 1
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
   m_Text: 'Spawns On Start
+
+
+
+    This Spawner will Spawn an Object on Start.
 
 '
 --- !u!222 &1264651306
@@ -762,8 +766,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 117.66, y: 458}
-  m_SizeDelta: {x: 235.31, y: 30}
+  m_AnchoredPosition: {x: 0, y: 352}
+  m_SizeDelta: {x: 252.14, y: 146.98}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1273800600
 MonoBehaviour:
@@ -792,13 +796,14 @@ MonoBehaviour:
     m_BestFit: 0
     m_MinSize: 10
     m_MaxSize: 40
-    m_Alignment: 0
+    m_Alignment: 1
     m_AlignByGeometry: 0
     m_RichText: 1
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Player Respawner
+  m_Text: "Player Respawner\n\n\nThis Spawner spawns an object with a Health component.
+    \nWhen that object dies, it will respawn the object through the Spawn Method."
 --- !u!222 &1273800601
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -945,8 +950,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -703, y: 458}
-  m_SizeDelta: {x: 235.31, y: 30}
+  m_AnchoredPosition: {x: -606, y: 250}
+  m_SizeDelta: {x: 329.05, y: 244}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1913880609
 MonoBehaviour:
@@ -981,7 +986,17 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Spawns From OnSpawn Trigger
+  m_Text: 'Spawns From OnSpawn Trigger
+
+
+
+    As the Green Spawner spawns an object,
+
+    It
+    fires an OnSpawn Event which this Spawner
+
+    has subscribed to and spawns an
+    object.'
 --- !u!222 &1913880610
 CanvasRenderer:
   m_ObjectHideFlags: 0
