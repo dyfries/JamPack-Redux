@@ -1,0 +1,62 @@
+----------------------
+| Class Descriptions |
+----------------------
+
+=============================================
+
+----------
+| Health |
+----------
+
+A class for objects with hit point values.
+
+Gives an object hit points and creates two Unity Events to track being damaged and when it has reached 0.
+Has different methods of death whether destroying the object, disabling the object, resetting values, or doing nothing.
+
+=============================================
+
+-----------------
+| Health Bar UI |
+-----------------
+
+A class that applies the current health value of a given health component to the fill amount of a Unity UI Image.
+
+Tracks the health class component of an object and displays a percentage value of its max health on a display image.
+The Class needs to have a reference to the object with a health class component, and is usually implemented for Player Objects.
+
+=============================================
+
+-----------------------
+| Damage On Collision |
+-----------------------
+
+A class for objects capable of applying damage to other objects on collision.
+
+Objects with the Damage On Collision class implemented will damage objects it collides that have a health class component.
+Relies on Unity Collision Events and can be used for static or moving obstacles / enemies.
+
+=============================================
+
+-----------
+| Spawner |
+-----------
+
+A class that spawns objects into the Scene at the transform of the object with the Spawner class.
+
+The class gives the ability to spawn objects in the scene at the location & rotation of the spawner.
+The spawning method can be called through events and is usually paired with Timers or Triggers.
+
+=============================================
+
+--------------------
+| Player Respawner |
+--------------------
+
+A subclass of Spawner dedicated to spawn & respawn a Player preFab by subscribing to the spawned Player's OnDeath Event.
+
+A dedicated class to spawn a Player into the scene allows for the functionality to be able to respawn on the Player object's death.
+The class can be used to delay the spawn of a player or create an endless game loop. It also allows for the functionality of limited lives.
+
+*| NOTE: A Player does not need to be in the scene if a PlayerRespawner is used, it will spawn its own Player. |*
+
+=============================================
