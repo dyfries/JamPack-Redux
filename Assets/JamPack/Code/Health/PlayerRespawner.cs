@@ -36,7 +36,12 @@ public class PlayerRespawner : Spawner
 
         
         // If a Health Bar UI Component is referenced, then track the Player's Health with the UI.
-        if (healthBarUI != null) 
+        if (healthBarUI != null)
+        {
             healthBarUI.healthComponentToTrack = latestSpawnedObject.GetComponent<Health>();
+            healthBarUI.healthComponentToTrack.OnDamage.AddListener(healthBarUI.SetPercentFilled);
+            healthBarUI.SetPercentFilled();
+        }
+            
     }
 }

@@ -1,0 +1,80 @@
+INSTRUCTIONS ON HOW TO USE THESE SCRIPTS
+
+----------
+| HEALTH |
+----------
+
+1. Add the Health Component to your desired game object.
+
+2. Set the max health of the object.
+
+3. Set the death behaviour of the object. (See documentation for a breakdown of these behaviours)
+
+
+-----------------------
+| DAMAGE ON COLLISION |
+-----------------------
+
+1. Add your choice of Collider2D to your desired game object. (BoxCollider2D, CircleCollider2D, etc.)
+
+2. Make sure "Is Trigger" on that collider is set to false.
+
+3. Add the "DamageOnCollision" component to that game object.
+
+4. Set the "Damage To Deal" amount.
+
+5. Everything should work now, but make sure the object whose health you want to damage has a collider of its own!
+
+
+-----------------
+| HEALTH BAR UI |
+-----------------
+
+1. Add the Health Bar UI component to a game object
+
+	1a. This should have added an image component to that game object.
+
+	1b. Add a "Source Image" to that image component.
+
+	1c. This should add a property called "Image Type" to the image.
+ 
+	1d. Change the image type from "Sliced" to "Filled"
+
+2. Drag and Drop the object whose health you want to display into the "Health Component To Track" section of the Health Bar UI component.
+
+3. Everything should be working now! Feel free to mess around with the image's fill settings to change how the health bar's progress will be displayed.
+
+
+-----------
+| SPAWNER |
+-----------
+
+1. Add the "Spawner" component to your desired game object.
+
+2. Set whether you'd like to spawn an object when the game starts.
+
+3. Drag and Drop your object prefab into the "Object To Spawn" section of the spawner.
+
+4. Add the spawner's "SpawnObject()" method to the unity event that you'd like to trigger a spawn.
+
+5. Move the spawner game object to the location that you'd like to spawn your object.
+
+
+--------------------
+| PLAYER RESPAWNER |
+--------------------
+
+1. Add the "Player Respawner" component to your desired game object.
+
+2. Set whether you'd like to spawn an object when the game starts.
+
+3. Drag and Drop your player prefab into the "Object To Spawn" section of the spawner.
+
+4. Move the respawner game object to the location that you'd like to spawn the player.
+
+5. (WARNING) Be sure to remove any players from your scene before playing. Because the spawner didn't spawn them, it won't be able to detect when the player dies, and won't respawn properly.
+
+6. (WARNING) If you have a Health Bar UI for the Player, drag and drop it into the "Health Bar UI" section at the bottom of the Player Respawner. This will make sure that the new player it spawns will have its health read.
+
+
+
