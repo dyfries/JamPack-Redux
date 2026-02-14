@@ -26,7 +26,7 @@ public class Collectable : MonoBehaviour {
 	public void OnTriggerEnter2D(Collider2D col){
         if (itemType == null)
         {
-            Debug.LogWarning("add a CollectableTypeSO");
+            Debug.LogWarning("This script will not function properly if you do not fill the variable item type");
             return;
         }
 
